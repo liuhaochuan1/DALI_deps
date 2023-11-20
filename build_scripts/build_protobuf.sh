@@ -46,7 +46,7 @@ if [ "${CC_COMP}" != "gcc" ]; then
         -Dprotobuf_BUILD_TESTS=OFF \
         -DWITH_PROTOC=${HOST_INSTALL_PREFIX}/bin/protoc \
         ..
-  make -j4 | wc -l)"
+  make -j4
   make install
 fi
 popd
