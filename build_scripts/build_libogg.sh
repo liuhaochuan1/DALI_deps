@@ -35,6 +35,6 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchain.cmake \
       -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} \
       -DBUILD_SHARED_LIBS=ON \
       ..
-make -j"$(grep ^processor /proc/cpuinfo | wc -l)"
+make -j4
 make install
 popd
